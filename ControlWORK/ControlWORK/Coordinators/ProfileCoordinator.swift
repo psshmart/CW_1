@@ -44,7 +44,23 @@ class ProfileCoordinator: Coordinator {
     }
     
     private func showRegistrationModule() {
-        print("registration")
+        let controller = RegistrationLoginViewController()
+        
+        controller.completionHandler = { [weak self] value in
+            self?.showRegistrationPasswordModule()
+        }
+        
+        navigationController.pushViewController(controller, animated: true)
+    }
+    
+    private func showRegistrationPasswordModule() {
+        let controller = RegistrationPasswordViewController()
+        
+        controller.completionHandler = { [weak self] value in
+            self?.showMainModule()
+        }
+        
+        navigationController.pushViewController(controller, animated: true)
     }
     
     private func showMainModule() {
