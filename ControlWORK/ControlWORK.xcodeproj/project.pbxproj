@@ -21,6 +21,8 @@
 		526A2983274BF9EA0052F11E /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2982274BF9EA0052F11E /* FlowController.swift */; };
 		526A2985274BFC9D0052F11E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2984274BFC9D0052F11E /* AuthViewController.swift */; };
 		526A2987274BFCFA0052F11E /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2986274BFCFA0052F11E /* BaseTextField.swift */; };
+		526A2989274C04F20052F11E /* RegistrationLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2988274C04F20052F11E /* RegistrationLoginViewController.swift */; };
+		526A298B274C078F0052F11E /* RegistrationPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A298A274C078F0052F11E /* RegistrationPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		526A2982274BF9EA0052F11E /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		526A2984274BFC9D0052F11E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		526A2986274BFCFA0052F11E /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		526A2988274C04F20052F11E /* RegistrationLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationLoginViewController.swift; sourceTree = "<group>"; };
+		526A298A274C078F0052F11E /* RegistrationPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewController.swift; sourceTree = "<group>"; };
 		85922E33936777199A557A15 /* Pods-ControlWORK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlWORK.debug.xcconfig"; path = "Target Support Files/Pods-ControlWORK/Pods-ControlWORK.debug.xcconfig"; sourceTree = "<group>"; };
 		9B827E1C544C983F6BC23A7A /* Pods-ControlWORK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlWORK.release.xcconfig"; path = "Target Support Files/Pods-ControlWORK/Pods-ControlWORK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,8 @@
 			children = (
 				526A2974274BEE900052F11E /* ProfileViewController.swift */,
 				526A2984274BFC9D0052F11E /* AuthViewController.swift */,
+				526A2988274C04F20052F11E /* RegistrationLoginViewController.swift */,
+				526A298A274C078F0052F11E /* RegistrationPasswordViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 				526A2975274BEE900052F11E /* ProfileViewController.swift in Sources */,
 				526A2962274BEAFB0052F11E /* SceneDelegate.swift in Sources */,
 				526A297F274BF76D0052F11E /* AppCoordinator.swift in Sources */,
+				526A298B274C078F0052F11E /* RegistrationPasswordViewController.swift in Sources */,
+				526A2989274C04F20052F11E /* RegistrationLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
