@@ -64,6 +64,8 @@ class ProfileCoordinator: Coordinator {
     }
     
     private func showMainModule() {
-        print("main")
+        let controller = MainViewController()
+        // LogOut нереализован
+        navigationController.pushViewController(controller, animated: true)
     }
 }
