@@ -1,0 +1,6 @@
+framework module Pods_ControlWORK {
+  umbrella header "Pods-ControlWORK-umbrella.h"
+
+  export *
+  module * { export * }
+}
