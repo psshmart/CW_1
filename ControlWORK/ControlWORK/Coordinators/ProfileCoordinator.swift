@@ -23,20 +23,31 @@ class ProfileCoordinator: Coordinator {
         
         controller.completionHandler = { [weak self] string in
             if string == "signIn" {
-                self?.showAuth()
+                self?.showAuthModule()
             } else {
-                self?.showRegistration()
+                self?.showRegistrationModule()
             }
         }
         
         navigationController.pushViewController(controller, animated: true)
     }
     
-    private func showAuth() {
-        print("auth")
+    private func showAuthModule() {
+        let controller = AuthViewController()
+        
+        controller.completionHandler = { [weak self] value in
+            self?.showMainModule()
+        }
+        
+        navigationController.pushViewController(controller, animated: true)
+       
     }
     
-    private func showRegistration() {
+    private func showRegistrationModule() {
         print("registration")
+    }
+    
+    private func showMainModule() {
+        print("main")
     }
 }
