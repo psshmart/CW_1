@@ -15,6 +15,10 @@
 		526A296C274BEAFD0052F11E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A296A274BEAFD0052F11E /* LaunchScreen.storyboard */; };
 		526A2975274BEE900052F11E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2974274BEE900052F11E /* ProfileViewController.swift */; };
 		526A2978274BF00A0052F11E /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2977274BF00A0052F11E /* BaseButton.swift */; };
+		526A297C274BF6930052F11E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A297B274BF6930052F11E /* Coordinator.swift */; };
+		526A297F274BF76D0052F11E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A297E274BF76D0052F11E /* AppCoordinator.swift */; };
+		526A2981274BF7F90052F11E /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2980274BF7F90052F11E /* ProfileCoordinator.swift */; };
+		526A2983274BF9EA0052F11E /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A2982274BF9EA0052F11E /* FlowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		526A296D274BEAFD0052F11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526A2974274BEE900052F11E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		526A2977274BF00A0052F11E /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		526A297B274BF6930052F11E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		526A297E274BF76D0052F11E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		526A2980274BF7F90052F11E /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		526A2982274BF9EA0052F11E /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		85922E33936777199A557A15 /* Pods-ControlWORK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlWORK.debug.xcconfig"; path = "Target Support Files/Pods-ControlWORK/Pods-ControlWORK.debug.xcconfig"; sourceTree = "<group>"; };
 		9B827E1C544C983F6BC23A7A /* Pods-ControlWORK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlWORK.release.xcconfig"; path = "Target Support Files/Pods-ControlWORK/Pods-ControlWORK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +81,8 @@
 		526A295E274BEAFB0052F11E /* ControlWORK */ = {
 			isa = PBXGroup;
 			children = (
+				526A297D274BF75D0052F11E /* Coordinators */,
+				526A297A274BF6880052F11E /* Base */,
 				526A2976274BEFF80052F11E /* Views */,
 				526A2973274BEE650052F11E /* ViewControllers */,
 				526A295F274BEAFB0052F11E /* AppDelegate.swift */,
@@ -99,6 +109,24 @@
 				526A2977274BF00A0052F11E /* BaseButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		526A297A274BF6880052F11E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				526A297B274BF6930052F11E /* Coordinator.swift */,
+				526A2982274BF9EA0052F11E /* FlowController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		526A297D274BF75D0052F11E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				526A297E274BF76D0052F11E /* AppCoordinator.swift */,
+				526A2980274BF7F90052F11E /* ProfileCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		95748E7484221AE672D457CD /* Pods */ = {
@@ -223,11 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526A2981274BF7F90052F11E /* ProfileCoordinator.swift in Sources */,
 				526A2964274BEAFB0052F11E /* ViewController.swift in Sources */,
+				526A2983274BF9EA0052F11E /* FlowController.swift in Sources */,
 				526A2978274BF00A0052F11E /* BaseButton.swift in Sources */,
+				526A297C274BF6930052F11E /* Coordinator.swift in Sources */,
 				526A2960274BEAFB0052F11E /* AppDelegate.swift in Sources */,
 				526A2975274BEE900052F11E /* ProfileViewController.swift in Sources */,
 				526A2962274BEAFB0052F11E /* SceneDelegate.swift in Sources */,
+				526A297F274BF76D0052F11E /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
