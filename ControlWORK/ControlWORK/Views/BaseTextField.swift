@@ -1,5 +1,5 @@
 //
-//  BaseButton.swift
+//  BaseTextField.swift
 //  ControlWORK
 //
 //  Created by Svetlana Safonova on 22.11.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseButton: UIButton {
+class BaseTextField: UITextField {
     
     private enum Constants {
         static let cornerRadius: CGFloat = 10
@@ -26,9 +26,8 @@ class BaseButton: UIButton {
     
     private func setupStyle() {
         layer.cornerRadius = Constants.cornerRadius
-        layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = Constants.borderWidth
-        setTitleColor(.black, for: .normal)
-        setTitleColor(.gray, for: .disabled)
+        layer.borderColor = UIColor.black.cgColor
+        textColor = .black
     }
 }
